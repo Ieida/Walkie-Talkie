@@ -64,6 +64,6 @@ public class PlayerBehaviour : MonoBehaviour
         cr.bodyRB.AddForce(localDir * cr.movementForce);
         cr.bodyRB.AddForce(cr.camHolderT.forward * (cr.jump * cr.jumpForce));
         //sync camera with body
-        cr.camHolderRB.MovePosition(new Vector3(cr.bodyT.position.x, cr.bodyT.position.y + 0.85f, cr.bodyT.position.z));
+        cr.camHolderRB.MovePosition(new Vector3(cr.bodyT.position.x, cr.bodyT.position.y, cr.bodyT.position.z));
     }
 }

@@ -32,6 +32,7 @@ public class WalkieTalkieBehaviour : MonoBehaviour
         float distanceSq = (wr.player.position - transform.position).sqrMagnitude;
         if(Input.GetMouseButtonUp(1))
         {
+            wr.rb.velocity = Vector3.zero;
             pc.translationAtRest = transform.position;
             pc.rotationAtRest = transform.eulerAngles;
             pc.weight = 0.0f;

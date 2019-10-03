@@ -23,8 +23,7 @@ public class ForceObjectSpawner : MonoBehaviour
             Vector3 point = transform.position + new Vector3(Random.Range(-radius, radius), Random.Range(-radius, radius), Random.Range(-radius, radius));
             Quaternion rotation = Quaternion.Euler(Random.Range(-180.0f, 180.0f), Random.Range(-180.0f, 180.0f), Random.Range(-180.0f, 180.0f));
             //instantiate Force Object
-            GameObject fo = Instantiate(forceObject, point, rotation);
-            fo.transform.parent = transform;
+            Instantiate(forceObject, point, rotation, transform);
         }
     }
 }

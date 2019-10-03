@@ -34,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/_custom/_TEST
+Assets/_custom/_TEST.meta
